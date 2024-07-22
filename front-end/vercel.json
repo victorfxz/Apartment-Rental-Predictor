@@ -12,7 +12,7 @@
   ],
   "routes": [
     {
-      "src": "/front-end/predict",
+      "src": "/front-end/app.py",
       "dest": "/front-end/app.py"
     },
     {
