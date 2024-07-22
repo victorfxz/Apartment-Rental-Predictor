@@ -70,7 +70,7 @@ return (
         onChange={(e) => setLatitude(e.target.value)}
         style={{ margin: '10px', padding: '10px', color: '#000000', borderRadius: '10px', width: '80%' }}
 		/>
-        <span className="tooltiptext1">Latitude must be between <span className="bold-text">-21.856</span> and <span class="bold-text">-26.923</span></span>
+        <span className="tooltiptext1">Latitude must be between <span className="bold-text">-21.856</span> and <span className="bold-text">-26.923</span></span>
       </div>
 	  <div className="tooltip">
       <input
@@ -80,7 +80,7 @@ return (
         onChange={(e) => setLongitude(e.target.value)}
         style={{ margin: '10px', padding: '10px', color: '#000000', borderRadius: '10px', width: '80%' }}
 		/>
-          <span className="tooltiptext1">Longitude must be between <span className="bold-text">-42.797</span> and <span class="bold-text">-51.978</span></span>
+          <span className="tooltiptext1">Longitude must be between <span className="bold-text">-42.797</span> and <span className="bold-text">-51.978</span></span>
         </div>
 	  <div className="tooltip">
       <input
