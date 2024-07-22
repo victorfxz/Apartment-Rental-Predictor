@@ -36,7 +36,7 @@ function Home() {
           'size': Number(areaConstruida),
         };
 
-		const response = await axios.post('app.py/predict', data);
+		const response = await axios.post('/api/predict', data);
 		if (response.data.predicted_price !== undefined) {
 		  const predictedPrice = response.data.predicted_price / 100;
 		  const formattedPrice = predictedPrice.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
