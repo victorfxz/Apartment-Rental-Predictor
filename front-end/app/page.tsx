@@ -70,7 +70,7 @@ return (
         onChange={(e) => setLatitude(e.target.value)}
         style={{ margin: '10px', padding: '10px', color: '#000000', borderRadius: '10px', width: '80%' }}
 		/>
-        <span className="tooltiptext1">Latitude must be between <span class="bold-text">-21.856</span> and <span class="bold-text">-26.923</span></span>
+        <span className="tooltiptext1">Latitude must be between <span className="bold-text">-21.856</span> and <span class="bold-text">-26.923</span></span>
       </div>
 	  <div className="tooltip">
       <input
@@ -80,7 +80,7 @@ return (
         onChange={(e) => setLongitude(e.target.value)}
         style={{ margin: '10px', padding: '10px', color: '#000000', borderRadius: '10px', width: '80%' }}
 		/>
-          <span className="tooltiptext1">Longitude must be between <span class="bold-text">-42.797</span> and <span class="bold-text">-51.978</span></span>
+          <span className="tooltiptext1">Longitude must be between <span className="bold-text">-42.797</span> and <span class="bold-text">-51.978</span></span>
         </div>
 	  <div className="tooltip">
       <input
@@ -90,7 +90,7 @@ return (
         onChange={(e) => setNumeroDeQuartos(e.target.value)}
         style={{ margin: '10px', padding: '10px', color: '#000000', borderRadius: '10px', width: '80%' }}
 		/>
-        <span className="tooltiptext2">values greater than <span class="bold-text">zero</span></span>
+        <span className="tooltiptext2">values greater than <span className="bold-text">zero</span></span>
 		</div>
 	  <div className="tooltip">
       <input
@@ -100,7 +100,7 @@ return (
         onChange={(e) => setAreaConstruida(e.target.value)}
         style={{ margin: '10px', padding: '10px', color: '#000000', borderRadius: '10px', width: '80%' }}
 		/>
-        <span className="tooltiptext2">values greater than <span class="bold-text">zero</span></span>
+        <span className="tooltiptext2">values greater than <span className="bold-text">zero</span></span>
 		</div>
       <button onClick={handlePredict} style={{ fontSize: '17px', width: '190px', margin: '20px', padding: '15px', backgroundColor: '#DC143C', border: 'none', color: 'white', borderRadius: '10px' }}>
         Estimate Price
