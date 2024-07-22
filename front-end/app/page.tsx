@@ -106,13 +106,8 @@ return (
         Estimate Price
       </button>
       {isLoading && <div style={{ textAlign: 'center', fontSize: '20px', marginTop: '20px', color: 'white' }}>Loading...</div>}
-        <div
-          className={prediction.includes('Please enter all valid values to obtain a prediction!') || prediction.includes('Error') ? 'error-message' : ''}
-          style={{ textAlign: 'center', fontSize: '20px', marginTop: '20px', color: 'white' }}
-        >
-          {prediction}
-       </div>
-	</div>
+      <div style={{ textAlign: 'center', fontSize: '20px', marginTop: '20px', color: 'white' }}>{prediction}</div>
+    </div>
   </div>
 );
 }
