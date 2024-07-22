@@ -105,8 +105,8 @@ return (
       <button onClick={handlePredict} style={{ fontSize: '17px', width: '190px', margin: '20px', padding: '15px', backgroundColor: '#DC143C', border: 'none', color: 'white', borderRadius: '10px' }}>
         Estimate Price
       </button>
-      {isLoading && <div style={{ textAlign: 'center', fontSize: '20px', marginTop: '20px', color: 'white' }}>Loading...</div>}
-      <div className={(prediction.includes('Please enter all valid values to obtain a prediction!') || prediction.includes('Error')) ? 'error-message' : ''} style={{ textAlign: 'center', fontSize: '20px', marginTop: '20px', color: 'white' }}>{prediction}</div>
+        {isLoading && <div style={{ textAlign: 'center', fontSize: '20px', marginTop: '20px', color: 'white' }}>Loading...</div>}
+		<div style={{ textAlign: 'center', fontSize: '20px', marginTop: '20px', color: 'white' }}>{prediction}</div>
     </div>
   </div>
 );
