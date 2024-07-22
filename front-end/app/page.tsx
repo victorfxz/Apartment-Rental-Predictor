@@ -36,9 +36,11 @@ function Home() {
           'size': Number(areaConstruida),
         };
 
-		const response = await axios.post('http://localhost:5000/predict', data);
-        if (response.data.predicted_price !== undefined) {
-          setPrediction(`Preço de Aluguél Previsto: R$${response.data.predicted_price.toFixed(0)}`);
+		const response = await axios.post('app.py/predict', data);
+		if (response.data.predicted_price !== undefined) {
+		  const predictedPrice = response.data.predicted_price / 100;
+		  const formattedPrice = predictedPrice.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+		  setPrediction(`Predicted Apartment Rental Price (in Reais): R$${formattedPrice}`);
 		} else {
 		  setPrediction('An error occurred while making the prediction. Please try again later.');
 		}
