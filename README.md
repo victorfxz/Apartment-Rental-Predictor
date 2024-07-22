@@ -41,7 +41,7 @@
 - **Rental Price**: Rental price in Brazilian Reais (R$) **[🎯 prediction target ]**
 
 ## Project hosted on Vercel [Cloud Platform]
-
+https://apartment-rental-predictor.vercel.app/
 
 ## Project Execution [Locally]
 ### **Pre-requisites**
